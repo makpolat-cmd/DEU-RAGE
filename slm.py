@@ -5,4 +5,5 @@ print("mrb enes")
 
 for a in range(9) :
     print(a)
-    print("hahaha")
+    print("\n hahaha ---")
+print("Eklenti")
