@@ -6,4 +6,4 @@ print("mrb enes")
 for a in range(9) :
     print(a)
 
-print("End Line")
+print("End The Line")
