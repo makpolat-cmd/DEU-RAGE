@@ -7,6 +7,7 @@ print("slm")
 print("as")
 print("slm DEU RAGE")
 print("mrb enes")
-for x=0:9
-    print(x)
+for a in range(9) :
+    print(a)
+
 print("End")
