@@ -1,8 +1,6 @@
 import RPi.GPIO as IO
 import time
 
-
-
 def motorsInit():
     IO.setmode(IO.BCM)
     m1 = IO.setup(12, IO.OUT)
