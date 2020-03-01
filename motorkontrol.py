@@ -1,11 +1,11 @@
 import RPi.GPIO as IO
 import time
 
-m1 = IO.setup(12, IO.OUT,5,6)
-m2 = IO.setup(13, IO.OUT,5,6)
+
+m1 = IO.setup(12, IO.OUT)
+m2 = IO.setup(13, IO.OUT)
     
 def motorsInit():
-    IO.setmode(IO.BCM)
     time.sleep(1)
     
 def motorStart(dutycyle=1000):
