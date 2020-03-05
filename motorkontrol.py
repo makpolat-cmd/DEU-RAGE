@@ -8,9 +8,9 @@ m2 = IO.setup(13, IO.OUT)
 def motorsInit():
     time.sleep(1)
     
-def motorStart(dutycyle=1000):
-    m1.start(dutycyle)
-    m2.start(dutycyle)
+def motorStart(initdutycyle=1000):
+    m1.start(initdutycyle)
+    m2.start(initdutycyle)
     time.sleep(1)
    
 def motorsStop():
