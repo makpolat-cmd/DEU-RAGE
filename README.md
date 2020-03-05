@@ -1,3 +1,4 @@
 # DEU-RAGE
 
-#1 motor kontrol algoritması deneme 
+#1 motor kontrol algoritması
+#2 genel algoritma
