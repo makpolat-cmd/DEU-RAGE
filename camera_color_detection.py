@@ -55,7 +55,7 @@ def color_detection(frame):
 		for y in range(10,frame.shape[1]-10,5):
 
 			# Color parameters are defined here.
-			color = (frame[x,y,0]/2)-(frame[x,y,1]/4)-(frame[x,y,2]/4)
+			color = (frame[x,y,0]/4)-(frame[x,y,1]/2)+(frame[x,y,2]/4)
 			# Condition to mark that area
 			if color>20:
 				square_frame(frame,(x,y),5)
