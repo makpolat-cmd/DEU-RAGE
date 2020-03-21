@@ -60,6 +60,8 @@ while 1:
             cv2.circle(frame, (i[0], i[1]), i[2], (255, 255, 255), 2)
             cv2.circle(frame, (i[0], i[1]), 2, (0, 0, 255), 3)
 
+
+
     cv2.imshow("camera", frame)
 
 cv2.destroyAllWindows()
