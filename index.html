@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Biomass </title>
+<p class="baslik"> DEU RAGE BİYOKÜTLE ENERJİ SİSTEM ANALİZİ</p>
+<p class="baslik2"> Çiftliğinizden Elde Edebileceğiniz Geliri Hesaplayın! <br></p>
+
+</head>
+<body>
+
+ <link rel ="stylesheet" href ="main.css"/>
+ <input type="text" placeholder="Büyükbaş" id="myInput">
+ <input type="text" placeholder="Küçükbaş" id="myInput2">
+ <input type="text" placeholder="Kümes" id="myInput3">
+ <input type="text" placeholder="Tüketilecek Enerji(kWh)" id="myInput4">
+ 
+    <button type="button" onclick="getInputValue();">Testi Yap</button>
+    
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            
+            const inputVal = document.getElementById("myInput").value;
+            const inputVal2 = document.getElementById("myInput2").value;
+            const inputVal3 = document.getElementById("myInput3").value;
+            const inputVal4 = document.getElementById("myInput4").value;
+            const tot = (inputVal2*26.25) + (inputVal*65) + (inputVal3*3);
+            const harc = (inputVal4*1);
+            const top = (tot - harc)*(0.5);
+           // var uretkw = harc + top;
+            //alert(top);
+           
+            // Displaying the value 
+            const sistemf = 355000 + (tot*5);
+            var ay;
+            for (ay=1 ; ay*top <= sistemf; ay++) {
+
+                }
+           //if (inputVal4 > tot) {
+          // const yuzde = (100*tot)/(inputVal4);
+           // }
+           // top = Number(top.toFixed(2));
+			document.getElementById("demo").innerHTML = "Aylık " + top + "TL brüt kar elde edilebilir.";
+            document.getElementById("gemo").innerHTML = "Aylık " + tot + "kWh elektrik enerjisi üretilebilir.";
+			document.getElementById("emo").innerHTML = "Sistem masrafını " + ay + " ayda karşılayabilir.";
+			
+        
+        }
+</script>
+        
+<p class="cikti" id="demo"></p>
+<p class="cikti2" id="gemo"></p>
+<p class="cikti1" id="emo"></p>
+<style>
+    .col-1{
+        background: blue;
+    }
+    .col-2{
+        background: white;
+    }
+    .col-3{
+        background: pink;
+    }
+
+</style>
+
+<div class="wrapper">
+  <div class="box1" align="center">Markalar<br><br><br><br><br><br><br>
+    <a href="https://www.erenholding.com.tr/tr/sektorler/enerji/modern-biyokutle">Eren Holding<br><br></a>
+    <a href="https://www.abholding.com.tr/tr/sektorler/enerji/modern-biyokutle"><br>AB Holding</a><br><br><br>
+    <a href="https://www.mimsangrup.com.tr">Mimsan Grup</a>
+  </div>
+  <div class="box2" align="center">Vizyon<br><br><br><br><br><br><br><br>Uluslararası platformda tanınan,dünya standartlarında,çagdaş yenilikleri takip eden ve yeniliklere öncülük eden,diger enerji kurulusları tarafından örnek alınan enerji kurumu olmak.</div>
+  <div class="box3" align="center">Misyon<br><br><br><br><br><br><br><br><br>Milli bir veritabanı oluşturmak. Bu kurduğumuz sistemle yazılım alanında da istihdam sağlamak. Ülke içerisinde tarım olanaklarını geliştirmek.</div>
+  <div class="box4" align="center">İletişim<br><br><br><br><br><br><br><br><br>+905550005555<br><br>deurage-biyokutle@gmail.com</div>
+</div>
+
+</body>
+
+
+
+
+</html>
